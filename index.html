@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Order your Pizza</h1>
+      </div>
+
+      <form id="input">
+        <h2>Select a topping</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <label>
+              <input type="radio" name="movie" value="hotelT">
+              Cheese
+              </label>
+          </div>
+          <div class="col-md-4">
+            <label>
+              <input type="radio" name="movie" value="incredibles">
+              Pepperoni
+              </label>
+          </div>
+          <div class="col-md-4">
+            <label>
+              <input type="radio" name="movie" value="spyDumped">
+              Artichoke
+              </label>
+          </div>
+          </div>
+
+          <h2>Select a size</h2>
+          <div class="row">
+            <div class="col-md-4">
+                <label>
+                  <input type="radio" name="time" value="matinee">
+                  Small
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="time" value="afternoon">
+                  Medium
+                </label>
+              </div>
+                <div class="col-md-4">
+                <label>
+                  <input type="radio" name="time" value="evening">
+                  Large
+                </label>
+              </div>
+            </div>
+
+              <div>
+                <button id="btn" type="submit" class="btn btn-info">Total Price</button>
+<br>
+<br>
+<br>
+              </div>
+            </form>
+        <div id="result">
+          <h2>Amount is <span class="result"> </span></h2>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
