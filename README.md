@@ -31,6 +31,6 @@ _a website for a pizza company where a user can choose one or more individual to
 * _jQuery_
 
 ## Link to GitHub Pages
-*  
+*  https://meriat.github.io/Pizza
 
 Copyright (c) 2016 **_Meria J Thomas_**
