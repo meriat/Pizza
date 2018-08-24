@@ -18,8 +18,9 @@ $(document).ready(function(){
     var size = $("input:radio[name=size]:checked").val();
     console.log(topping);
     var newTotal = new Pizza(topping,size);
+    $("#result").slideDown();
+    $("#result").empty().append("<h4>Total: </h4><span class=result> $" + newTotal.amount() +"</span>");
 
-    $("#result").append("<span class=result>" + newTotal.amount() +"</span>");
 
   })
 });

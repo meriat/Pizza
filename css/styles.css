@@ -1,8 +1,18 @@
 .jumbotron{
   text-align: center;
-  background-color: #d3f2ff;
+  background-color: #161f21;
+  color: #ccdfff;
 }
 
 body{
   background-color: #ccdfff;
+}
+
+#result{
+  display: none;
+}
+
+.result{
+  font-size: 20px;
+  padding-left: 50px;
 }
