@@ -1,26 +1,28 @@
-function Pizza(topping, size) {
+function Pizza(topping,size){
   this.topping = topping;
   this.size = size;
 }
+var toppingAssign = {cheese:1, pepperoni: 2, artochoke:1};
+var sizeAssign = {small:1,medium:2,large:3};
 
-var toppingName = {cheese: 3, pepperoni:5 , artichoke: 4 };
-var sizeName = {small:3, medium: 4, large: 5};
-
-Pizza.prototype.amount = function(){
-  return toppingName[this.topping] + sizeName[this.size];
-};
-
-
+Pizza.prototype.total = function(){
+  var totalTopping = 0;
+  for(var i=0;i<this.topping.length;i++){
+    totalTopping += toppingAssign[this.topping[i]];
+  }
+  return totalTopping + sizeAssign[this.size];
+}
 $(document).ready(function(){
   $("#input").submit(function(event){
     event.preventDefault();
-    var topping = $("input:radio[name=topping]:checked").val();
-    var size = $("input:radio[name=size]:checked").val();
-    console.log(topping);
-    var newTotal = new Pizza(topping,size);
+    var pizzaTopping = [];
+    $("input:checkbox[name=topping]:checked").each(function(){
+      pizzaTopping.push($(this).val());
+    });
+    var pizzaSize = $("input:radio[name=size]:checked").val();
+    var total = new Pizza(pizzaTopping,pizzaSize);
     $("#result").slideDown();
-    $("#result").empty().append("<h4>Total: </h4><span class=result> $" + newTotal.amount() +"</span>");
+    $("#result").empty().append("Total is: " +total.total());
 
-
-  })
+  });
 });
