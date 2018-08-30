@@ -6,13 +6,29 @@
 
 body{
   background-color: #ccdfff;
+  font-family:monospace;
 }
 
 #result{
   display: none;
+  margin: 3%;
+  font-size: 30px;
 }
 
 .result{
   font-size: 20px;
   padding-left: 50px;
+}
+
+img {
+  border-radius: 100%;
+  margin-left: 30%;
+  width: 30%;
+}
+
+button{
+  margin-top: 2%;
+}
+label{
+  font-size: 20px;
 }
