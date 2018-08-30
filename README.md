@@ -10,7 +10,7 @@ _a website for a pizza company where a user can choose one or more individual to
 
 ## Specification
 
-1. Create a constructor with properties for topping and size
+1. Create a constructor with properties for topping, size and number of pizza 
 
 2. Create objects to assign values to each topping and size
 
